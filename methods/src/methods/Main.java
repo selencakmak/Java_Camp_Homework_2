@@ -1,4 +1,5 @@
 package methods;
+//don't repeat yourself
 
 public class Main {
 
