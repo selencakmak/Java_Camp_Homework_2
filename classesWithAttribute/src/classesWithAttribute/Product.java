@@ -2,6 +2,23 @@ package classesWithAttribute;
 
 public class Product {
 	
+	//Overloading
+	public Product(int id, String name, String description, double price, int stockAmount, String renk) {
+		System.out.println("yapici blok calýstý");
+		this.id=id;
+		this.name=name;
+		this.description=description;
+		this.renk=renk;
+		this.price=price;
+		this.stockAmount=stockAmount;
+		
+	}
+	
+	public Product() {
+		
+	}
+	
+	
 	//attribute or field
 	private int id;
 	private String name;
@@ -11,6 +28,7 @@ public class Product {
 	private String renk;
     private String kod;
 	
+    
     
     public int getId() {
 		return id;
@@ -51,10 +69,6 @@ public class Product {
 	public String getKod() {
 		return this.name.substring(0,1)+id;
 	}
-	
-    
-    
-	
 	
 	
 	
